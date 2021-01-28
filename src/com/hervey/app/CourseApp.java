@@ -12,7 +12,9 @@ public class CourseApp {
 		
 		System.out.println(degreePlanA);
 		
-
+		String scheduleForA = ScheduleMaker.makeStandardSchedule(degreePlanA);
+		
+		System.out.println(scheduleForA);
 	}
 
 }
