@@ -8,7 +8,9 @@ public class CourseApp {
 
 	public static void main(String[] args) {
 		
+		DegreePlan degreePlanA = DegreePlanMaker.makePlanA();
 		
+		System.out.println(degreePlanA);
 		
 
 	}

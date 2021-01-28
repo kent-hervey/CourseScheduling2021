@@ -1,5 +1,6 @@
 package com.hervey.app;
 
+import java.util.ArrayList;
 import java.util.List;
 
 //utility class for building various courses
@@ -7,7 +8,7 @@ import java.util.List;
 public class DegreePlan {
 	
 	int numCourses;
-	List<Course> coursesInDegreePlan;
+	List<Course> coursesInDegreePlan = new ArrayList<Course>();
 
 	public DegreePlan() {
 		// TODO Auto-generated constructor stub
