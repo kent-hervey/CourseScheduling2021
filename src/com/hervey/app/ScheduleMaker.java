@@ -1,6 +1,7 @@
 package com.hervey.app;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ScheduleMaker {
@@ -49,6 +50,30 @@ public class ScheduleMaker {
 			
 		}
 		
+		public static void showDegreePlanStandarListing(DegreePlan degreePlan) {
+			//will print out a line for each course with its number followed by numbers of each pre-req
+			//sorted by course number
+			//so let's start by just printing each course in degree plan sorted by course number
+			List<Course> theCourses = degreePlan.getCoursesInDegreePlan();
+			for(Course course:theCourses) {
+				System.out.println("Course in this Degree Plan:  " + course.getCourseNumber());
+				
+				if(course.getPrerequisites().size()==0) {
+					System.out.println("The course number " + course.getCourseNumber() + " has no pre-reqs" + "" + "\n");
+				}
+				else {
+									for(Course coursePrereqs : course.getPrerequisites()) {
+					System.out.println("The course number " + course.getCourseNumber() + " has this pre-req:  " + coursePrereqs.getCourseNumber() + "\n");
+				}
+				}
+
+				
+			}
+			
+			
+			
+			
+		}
 		
 		
 }

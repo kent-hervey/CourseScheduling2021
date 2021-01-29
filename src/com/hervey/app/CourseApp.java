@@ -25,6 +25,11 @@ public class CourseApp {
 		
 		ScheduleMaker.listPrereqThisCourse(firstCourseInDegreePlanA);
 		
+		System.out.println("below calling method that should print what the test question displayed");
+		ScheduleMaker.showDegreePlanStandarListing(degreePlanA);
+		
+		
+		
 		
 	}
 
