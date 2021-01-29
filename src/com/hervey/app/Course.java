@@ -112,7 +112,7 @@ public class Course {
 		return "Course name=" + name + " and prerequisites are:  " + this.prerequisites;
 	}
 	
-	
+
 	
 	
 	

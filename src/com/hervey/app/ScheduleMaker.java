@@ -29,7 +29,26 @@ public class ScheduleMaker {
 			return "Schedule is:  4, 5, 6, 4";
 		}
 		
-		
+		public static boolean DegreePlanCourseHasPrereq(Course course) {
+			 //iterate through course's prerequisites ArrayList looking for any prereq
+			
+			if(course.getPrerequisites().size()>0) {
+				return true;
+			}
+			
+			
+			return false;
+		}
 	
 
+		public static void listPrereqThisCourse(Course course) {
+			List<Course> prereqThisCourse = course.getPrerequisites();
+			
+			prereqThisCourse.stream().map(c ->  c.getCourseNumber()).forEach(System.out::println);
+			
+			
+		}
+		
+		
+		
 }

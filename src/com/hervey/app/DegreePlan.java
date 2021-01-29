@@ -22,12 +22,14 @@ public class DegreePlan {
 		this.numCourses = numCourses;
 	}
 
-	public List<Course> getCourseInDegreePlan() {
+
+
+	public List<Course> getCoursesInDegreePlan() {
 		return coursesInDegreePlan;
 	}
 
-	public void setCourseInDegreePlan(List<Course> courseInDegreePlan) {
-		this.coursesInDegreePlan = courseInDegreePlan;
+	public void setCoursesInDegreePlan(List<Course> coursesInDegreePlan) {
+		this.coursesInDegreePlan = coursesInDegreePlan;
 	}
 
 	@Override

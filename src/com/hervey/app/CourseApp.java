@@ -15,6 +15,17 @@ public class CourseApp {
 		String scheduleForA = ScheduleMaker.makeStandardSchedule(degreePlanA);
 		
 		System.out.println(scheduleForA);
+		
+		Course firstCourseInDegreePlanA = degreePlanA.getCoursesInDegreePlan().get(3);
+
+		
+		boolean catchResult = ScheduleMaker.DegreePlanCourseHasPrereq(firstCourseInDegreePlanA);
+		
+		System.out.println(catchResult);
+		
+		ScheduleMaker.listPrereqThisCourse(firstCourseInDegreePlanA);
+		
+		
 	}
 
 }
